@@ -1,0 +1,214 @@
+# Audio Transcription Tool - Git Ignore File
+
+# Virtual Environment
+audio_transcribe_env/
+venv/
+env/
+ENV/
+
+# Audio Input Files (usually large)
+audio-input/*.mp3
+audio-input/*.m4a
+audio-input/*.wav
+audio-input/*.flac
+audio-input/*.mp4
+audio-input/*.avi
+audio-input/*.mov
+audio-input/*.mkv
+audio-input/*.aac
+audio-input/*.ogg
+
+# Keep the directory but ignore contents
+audio-input/*
+!audio-input/.gitkeep
+
+# Transcription Output Files
+text-output/*.txt
+text-output/*.vtt
+text-output/*.srt
+text-output/temp_transcribe/
+
+# Keep the directory but ignore contents
+text-output/*
+!text-output/.gitkeep
+
+# Processed Files Tracking
+processed_files.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Large model files (if any get downloaded)
+*.bin
+*.safetensors
+models/
+
+# FFmpeg binaries (downloaded by static_ffmpeg)
+ffmpeg
+ffprobe
+
+# Rust compilation artifacts (from tiktoken build)
+target/
+Cargo.lock
+
+# Node modules (if any)
+node_modules/
+
+# Package files
+*.tar.gz
+*.zip
+*.rar
+*.7z 
